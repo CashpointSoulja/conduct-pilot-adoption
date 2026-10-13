@@ -1,5 +1,7 @@
 # Actual test results
 
+> Historical pre-release note. The current publication record is [LIVE_RELEASE.md](LIVE_RELEASE.md), which supersedes any statement below that the app is not deployed or the video is not recorded.
+
 Copied from command output on the build machine (Node 24, Wrangler 4.150.0 local runtime).
 Nothing here was run against a deployed Worker; the app has not been deployed.
 

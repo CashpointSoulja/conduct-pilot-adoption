@@ -1,5 +1,7 @@
 # Demo walkthrough: grounded script and deterministic flow
 
+> Historical pre-release note. The current publication record is [LIVE_RELEASE.md](../LIVE_RELEASE.md), which supersedes any statement below that the app is not deployed or the video is not recorded.
+
 Script for a 90-120 second first-person walkthrough of the real local build. The video itself is
 not produced in this repo. `demo/record.mjs` drives the running app through exactly these scenes
 with a visible pointer, so every on-screen result comes from the real Worker, not a mock-up.

@@ -5,6 +5,11 @@ Not an official Conduct product, not affiliated with or endorsed by Conduct AI L
 reproduce Conduct's internals. **All data is synthetic**: the account, people, systems, tests and
 cohort are invented. No SAP system is accessed and no ABAP is analysed.
 
+## Live release
+- Live demo: https://conduct-pilot-adoption.ayoahmed-49d.workers.dev
+- Voiced public walkthrough: https://drive.google.com/file/d/1Tsq6ynU3aWqDtuHboy0I4dzwtUSw00AI/view?usp=drivesdk&authuser=ayomideahmedcp%40gmail.com
+- Release record: [docs/LIVE_RELEASE.md](docs/LIVE_RELEASE.md)
+
 One screen takes a single synthetic change request from pilot scope to adoption:
 
 1. **Pilot scope**: objective, workflow, baselines (Unknown stays Unknown, no delta) and acceptance tests.
@@ -42,7 +47,8 @@ cd demo && node record.mjs   # with dev running: deterministic walkthrough frame
   by the Worker, tests and evals.
 - `public/`: vanilla HTML/CSS/JS, rendered with `textContent` only.
 
-## Status
+## Pre-release status (historical)
+Superseded by the current [live release record](docs/LIVE_RELEASE.md). Before release, this read:
 Cloudflare Workers Free configuration is prepared in `wrangler.jsonc` and the dry run passes.
 **Not deployed.** See `docs/deploy.md`.
 
@@ -54,7 +60,7 @@ Cloudflare Workers Free configuration is prepared in `wrangler.jsonc` and the dr
 [v2 roadmap](docs/roadmap-v2.md) · [Decision log](docs/decision-log.md) ·
 [Test results](docs/test-results.md) · [Claims and caveats](docs/claims-and-caveats.md) ·
 [Research](docs/research.md) · [Design](design.md) · [Deploy](docs/deploy.md) ·
-[Walkthrough script](docs/video/script.md)
+[Walkthrough script](docs/video/script.md) · [Live release record](docs/LIVE_RELEASE.md)
 
 No interviews have been run and nothing here measures real adoption or business impact.
 

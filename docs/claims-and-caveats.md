@@ -1,5 +1,7 @@
 # Claims and caveats ledger
 
+> Historical pre-release note. The current publication record is [LIVE_RELEASE.md](LIVE_RELEASE.md), which supersedes any statement below that the app is not deployed or the video is not recorded.
+
 | Claim made in the app, docs or video | Basis | Caveat |
 |---|---|---|
 | Independent concept by Ayo Ahmed | Authorship of this repo | Not affiliated with, endorsed by, or built for Conduct AI Ltd |

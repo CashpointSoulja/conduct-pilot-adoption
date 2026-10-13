@@ -1,4 +1,6 @@
-# Deployment runbook (not deployed)
+# Deployment runbook (pre-release, historical)
+
+> Historical pre-release note. The current publication record is [LIVE_RELEASE.md](LIVE_RELEASE.md), which supersedes any statement below that the app is not deployed or the video is not recorded.
 
 Target: Cloudflare Workers Free. Nothing has been deployed from this repo.
 
