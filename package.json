@@ -8,7 +8,8 @@
     "eval": "vite-node eval/run.ts --",
     "eval:broken": "vite-node eval/run.ts -- --broken",
     "check:wrangler": "wrangler deploy --dry-run --outdir .wrangler/dry-run",
-    "check": "npm run typecheck && npm test && npm run eval && npm run check:wrangler"
+    "check": "npm run typecheck && npm test && npm run eval && npm run check:wrangler",
+    "ui:check": "node scripts/ui-check.mjs"
   },
   "keywords": [],
   "author": "Ayo Ahmed",
@@ -20,6 +21,7 @@
     "@fontsource/inter": "^5.3.0",
     "@fontsource/source-serif-4": "^5.3.1",
     "@types/node": "^22.20.5",
+    "axe-core": "^4.14.0",
     "playwright": "1.48",
     "typescript": "^7.0.2",
     "vitest": "^2.1.9",

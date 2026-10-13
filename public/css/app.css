@@ -109,7 +109,7 @@ dialog pre { white-space: pre-wrap; word-break: break-word; background: var(--mi
   .foot { padding: 20px 16px; }
   h2.h { font-size: 26px; }
   .grid2, .grid3 { grid-template-columns: 1fr; }
-  .btn { min-height: 44px; }
+  .btn, .btn.sm, input[type=text], input[type=number], select { min-height: 44px; }
   .tbl.stack thead { display: none; }
   .tbl.stack tr { display: grid; gap: 4px; padding: 10px 0; border-bottom: 1px solid var(--ink-12); }
   .tbl.stack td { padding: 0; border: 0; }
