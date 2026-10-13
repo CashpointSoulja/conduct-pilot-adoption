@@ -25,7 +25,7 @@ One screen takes a single synthetic change request from pilot scope to adoption:
 ```bash
 npm ci
 npm run dev          # http://localhost:8787
-npm test             # 54 tests
+npm test             # 65 tests
 npm run eval         # 12 expected/actual evaluations
 npm run eval:broken  # deliberately weakened freshness rule: 1 red, exit 1
 npm run ui:check     # with dev running: 24 browser checks incl. axe, keyboard, dialogs
@@ -35,7 +35,7 @@ cd demo && node record.mjs   # with dev running: deterministic walkthrough frame
 
 ## How it works
 - `src/worker.ts`: Cloudflare Worker. Gives each visitor a random HttpOnly cookie and routes them
-  to their own SQLite-backed Durable Object (`PilotWorkspace`). Same-origin JSON only, 128 KB body cap.
+  to their own SQLite-backed Durable Object (`PilotWorkspace`). Same-origin JSON only, 128 KB body cap counted in UTF-8 bytes while streaming.
 - `src/store.ts`: transactional state, optimistic revision checks, idempotency keys, bounded rows,
   14-day idle wipe.
 - `src/engine/`: pure rules (gates, impact walk, acceptance suite, cohort metrics, exports), shared

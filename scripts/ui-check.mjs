@@ -26,8 +26,14 @@ async function fresh(width, height) {
   page.on("pageerror", (e) => errors.push(String(e)));
   // Refused commands (409/422) are expected in this flow; the browser logs them as resource errors.
   page.on("console", (m) => m.type() === "error" && !/status of (409|422) /.test(m.text()) && errors.push(m.text()));
+  page.on("response", (r) => r.status() >= 400 && !(new URL(r.url()).pathname === "/api/command" && [409, 422].includes(r.status())) && errors.push(`${r.status()} ${r.url()}`));
   await page.goto(BASE, { waitUntil: "networkidle" });
   await page.waitForSelector("[data-slot=gates] .verdict");
+  const icons = await page.evaluate(async () => {
+    const hrefs = [...document.querySelectorAll("link[rel~=icon]")].map((l) => l.href).concat(new URL("/favicon.ico", location.href).href);
+    return Promise.all(hrefs.map(async (h) => { const r = await fetch(h); return `${new URL(h).pathname} ${r.status} ${r.headers.get("content-type")}`; }));
+  });
+  check(`favicon links and /favicon.ico resolve (${width}px)`, icons.length >= 3 && icons.every((i) => / 200 image\//.test(i)), icons.join(", "));
   return { ctx, page, errors };
 }
 const shot = (page, name, opts = {}) => page.screenshot({ path: OUT + name, ...opts });

@@ -1,6 +1,7 @@
 import { DurableObject } from "cloudflare:workers";
 import { EXPORT_KINDS, type ExportKind } from "./engine/exports";
 import { WorkspaceStore, type StoreResponse } from "./store";
+import { readJsonBody } from "./body";
 
 export interface Env {
   WORKSPACE: DurableObjectNamespace<PilotWorkspace>;
@@ -96,13 +97,9 @@ export async function handleApi(req: Request, env: Env): Promise<Response> {
     if (origin !== null && origin !== url.origin) return json(403, { error: "cross_origin", message: "Cross-origin commands are refused." }, setCookie);
     if (!(req.headers.get("Content-Type") ?? "").toLowerCase().startsWith("application/json"))
       return json(415, { error: "unsupported_media_type", message: "Send application/json" }, setCookie);
-    const declared = Number(req.headers.get("Content-Length") ?? "0");
-    if (declared > MAX_BODY) return json(413, { error: "too_large", message: "Body exceeds 128 KB" }, setCookie);
-    const text = await req.text();
-    if (text.length > MAX_BODY) return json(413, { error: "too_large", message: "Body exceeds 128 KB" }, setCookie);
-    let body: unknown;
-    try { body = JSON.parse(text); } catch { return json(400, { error: "invalid_json", message: "Body is not valid JSON" }, setCookie); }
-    const res = (await stub.command(body, req.headers.get("Idempotency-Key"))) as unknown as StoreResponse;
+    const read = await readJsonBody(req, MAX_BODY);
+    if (!read.ok) return json(read.status, { error: read.error, message: read.message }, setCookie);
+    const res = (await stub.command(read.value, req.headers.get("Idempotency-Key"))) as unknown as StoreResponse;
     return json(res.status, res.body, { ...setCookie, ...(res.replay ? { "Idempotent-Replay": "true" } : {}) });
   }
 
