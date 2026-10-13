@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Visual guide · Pilot-to-Adoption Proof</title>
+<link rel="stylesheet" href="../public/css/tokens.css"><link rel="stylesheet" href="../public/css/app.css">
+<style>.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}.sw div{border-radius:14px;border:1px solid var(--ink-12);overflow:hidden;font-size:12px}.sw i{display:block;height:64px}.sw p{margin:0;padding:8px 10px}.vg{padding:32px 40px;max-width:1200px}</style>
+</head><body>
+<div class="banner">Independent concept by Ayo Ahmed · Not affiliated with Conduct AI Ltd · <strong>All data synthetic</strong></div>
+<header class="top"><div><p class="brand-title">Pilot-to-Adoption Proof</p><p class="byline">Visual guide · tokens and components</p></div>
+<div class="concept-for">Concept for <img src="../public/brand/conduct-wordmark.svg" alt="Conduct"></div></header>
+<div class="vg">
+<p class="label"><span class="num">01</span> Colour</p>
+<div class="sw">
+<div><i style="background:#1E0D15"></i><p>Ink #1E0D15<br>text, primary button</p></div>
+<div><i style="background:#F85018"></i><p>Ember #F85018<br>borders, large text only</p></div>
+<div><i style="background:#B83A0E"></i><p>Ember text #B83A0E<br>small accent text 5.75:1</p></div>
+<div><i style="background:#FFE5D8"></i><p>Peach #FFE5D8<br>banner, synthetic chip</p></div>
+<div><i style="background:#F7F7F7"></i><p>Mist #F7F7F7<br>rows inside cards</p></div>
+<div><i style="background:#6B5A62"></i><p>Muted #6B5A62<br>secondary text 6.43:1</p></div>
+<div><i style="background:var(--ember-wash)"></i><p>Ember wash<br>behind hero card only</p></div>
+</div>
+<p class="label" style="margin-top:36px"><span class="num">02</span> Type</p>
+<h2 class="h">Scope the pilot. <em>Prove it before rollout.</em></h2>
+<p class="lede">Source Serif 4 display (fallback for Flecha S). Inter for UI copy (fallback for APK Narrative / ABC Diatype). Fragment Mono for labels, IDs and chips.</p>
+<p class="mono">CR-SYN-014 · rev 3 · fp 9c1e44a0</p>
+<p class="label" style="margin-top:36px"><span class="num">03</span> Status chips</p>
+<p><span class="chip pass">Pass</span> <span class="chip fail">Fail</span> <span class="chip stale">Stale</span> <span class="chip unknown">Unknown</span> <span class="chip blocked">Blocked</span> <span class="chip hold">Hold</span> <span class="chip sim">Simulated</span> <span class="chip syn">Synthetic fixture</span></p>
+<p class="label" style="margin-top:36px"><span class="num">04</span> Buttons</p>
+<p class="actions"><button class="btn primary">Run acceptance suite</button><button class="btn">Export handoff</button><button class="btn ghost">Cancel</button><button class="btn" aria-disabled="true">Simulated rollout</button></p>
+<p class="label" style="margin-top:36px"><span class="num">05</span> Cards and gate rail</p>
+<div class="grid2">
+<div class="wash"><div class="card"><p class="label">Rollout gate</p><p class="verdict">Blocked</p><ul class="gates">
+<li><span class="chip pass">Pass</span><span>Every blocker has an owner</span></li>
+<li><span class="chip fail">Fail</span><span>Acceptance suite green on current revision<span class="why">AT-3 failed · recovery owner: Integration developer (synthetic)</span></span></li>
+<li><span class="chip stale">Stale</span><span>Approval bound to current revision<span class="why">Approved rev 2; current rev 3</span></span></li></ul></div></div>
+<div class="card"><h3>Activation</h3><p class="verdict">31 / 44</p><p class="small muted">Numerator / denominator. 48 invited, 4 excluded (listed), 2 unknown first-use dates kept out of both.</p><div class="rows"><div class="row small">Analysts 18 / 20</div><div class="row small">Developers 13 / 24</div></div></div>
+</div>
+</div></body></html>

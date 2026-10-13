@@ -1,0 +1,44 @@
+/* Design tokens. Values measured from the live conduct.ai site on 2026-10-13 (see design.md);
+   proprietary faces are replaced by open-licensed fallbacks bundled in /fonts. */
+@font-face { font-family: "Source Serif 4"; src: url("../fonts/source-serif-4-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/inter-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/inter-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("../fonts/inter-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Fragment Mono"; src: url("../fonts/fragment-mono-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+
+:root {
+  --ink: #1E0D15;
+  --ink-80: rgba(30, 13, 21, 0.8);
+  --ink-70: rgba(30, 13, 21, 0.7);
+  --ink-60: #6B5A62;
+  --ink-12: rgba(30, 13, 21, 0.12);
+  --ink-06: rgba(30, 13, 21, 0.06);
+  --olive: #1D1D0A;
+  --paper: #FFFFFF;
+  --mist: #F7F7F7;
+  --peach: #FFE5D8;
+  --peach-soft: #FFF1DE;
+  --ember: #F85018;
+  --ember-text: #B83A0E;
+  --amber: #FC9432;
+  --rose: #F0454B;
+  --ok: #1F6F43;
+  --ok-bg: #E6F2EA;
+  --warn: #8A5300;
+  --warn-bg: #FFF1DE;
+  --bad: #A3231B;
+  --bad-bg: #FCE8E6;
+  --unknown: #4A4F57;
+  --unknown-bg: #EEF0F2;
+
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Fragment Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --radius-pill: 350px;
+  --radius-card: 20px;
+  --radius-row: 12px;
+  --shadow-card: 0 1px 2px rgba(30, 13, 21, 0.06), 0 8px 24px rgba(30, 13, 21, 0.06);
+  --ember-wash: linear-gradient(90deg, #FFF1DE 0%, #FFD6A6 35%, #FC9432 70%, #F85018 88%, #F0454B 100%);
+  --focus: 0 0 0 3px #FFFFFF, 0 0 0 5px #1E0D15;
+}
