@@ -7,7 +7,7 @@ cohort are invented. No SAP system is accessed and no ABAP is analysed.
 
 ## Live release
 - Live demo: https://conduct-pilot-adoption.ayoahmed-49d.workers.dev
-- Voiced public walkthrough: https://drive.google.com/file/d/1Tsq6ynU3aWqDtuHboy0I4dzwtUSw00AI/view?usp=drivesdk&authuser=ayomideahmedcp%40gmail.com
+- Voiced public walkthrough: https://drive.google.com/file/d/1Tsq6ynU3aWqDtuHboy0I4dzwtUSw00AI/view
 - Release record: [docs/LIVE_RELEASE.md](docs/LIVE_RELEASE.md)
 
 One screen takes a single synthetic change request from pilot scope to adoption:
