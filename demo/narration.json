@@ -1,0 +1,172 @@
+[
+ {
+  "id": "intro",
+  "lines": [
+   {
+    "say": "This is Pilot-to-Adoption Proof, an independent concept I built for the Deployment Strategist role.",
+    "cap": "This is Pilot-to-Adoption Proof, an independent concept|I built for the Deployment Strategist role."
+   },
+   {
+    "say": "Every account, person and number in it is synthetic.",
+    "cap": "Every account, person and number in it is synthetic."
+   }
+  ]
+ },
+ {
+  "id": "scope",
+  "lines": [
+   {
+    "say": "A pilot starts with one workflow, two baselines and six acceptance tests.",
+    "cap": "A pilot starts with one workflow,|two baselines and six acceptance tests."
+   },
+   {
+    "say": "Lead time was never measured, so it stays Unknown, and no improvement is claimed.",
+    "cap": "Lead time was never measured, so it stays Unknown,|and no improvement is claimed."
+   }
+  ]
+ },
+ {
+  "id": "impact",
+  "lines": [
+   {
+    "say": "The fuel surcharge change is walked through a synthetic dependency graph, with each object's depth and owner.",
+    "cap": "The fuel surcharge change is walked through a synthetic|dependency graph, with each object's depth and owner."
+   }
+  ]
+ },
+ {
+  "id": "early",
+  "lines": [
+   {
+    "say": "If I try to approve now, the server refuses.",
+    "cap": "If I try to approve now, the server refuses."
+   },
+   {
+    "say": "It lists every blocking gate, and names who recovers each one.",
+    "cap": "It lists every blocking gate,|and names who recovers each one."
+   }
+  ]
+ },
+ {
+  "id": "run1",
+  "lines": [
+   {
+    "say": "The first run fails two of six tests, and each failure names the owner of the object it covers.",
+    "cap": "The first run fails two of six tests, and each failure|names the owner of the object it covers."
+   }
+  ]
+ },
+ {
+  "id": "assign",
+  "lines": [
+   {
+    "say": "Three blockers have no owner, so I give each one a named team.",
+    "cap": "Three blockers have no owner,|so I give each one a named team."
+   },
+   {
+    "say": "Until every blocker is owned, the gate stays red.",
+    "cap": "Until every blocker is owned, the gate stays red."
+   }
+  ]
+ },
+ {
+  "id": "resolve",
+  "lines": [
+   {
+    "say": "Resolving a blocker needs a note.",
+    "cap": "Resolving a blocker needs a note."
+   },
+   {
+    "say": "The margin report gap is accepted as a risk, with its reason recorded.",
+    "cap": "The margin report gap is accepted as a risk,|with its reason recorded."
+   },
+   {
+    "say": "Fixing the environment bumps the change to revision three, so the earlier run no longer counts.",
+    "cap": "Fixing the environment bumps the change to revision three,|so the earlier run no longer counts."
+   }
+  ]
+ },
+ {
+  "id": "approve",
+  "lines": [
+   {
+    "say": "A fresh run passes six of six.",
+    "cap": "A fresh run passes six of six."
+   },
+   {
+    "say": "The approver signs off on this exact revision and run, and all eight gates go green.",
+    "cap": "The approver signs off on this exact revision and run,|and all eight gates go green."
+   }
+  ]
+ },
+ {
+  "id": "stale",
+  "lines": [
+   {
+    "say": "Now I move the simulated clock forward twenty five hours.",
+    "cap": "Now I move the simulated clock forward 25 hours."
+   },
+   {
+    "say": "The evidence is stale, rollout is blocked again, and the test lead is named to recover it.",
+    "cap": "The evidence is stale, rollout is blocked again,|and the test lead is named to recover it."
+   }
+  ]
+ },
+ {
+  "id": "recover",
+  "lines": [
+   {
+    "say": "A new run and a new approval clear the gate.",
+    "cap": "A new run and a new approval clear the gate."
+   },
+   {
+    "say": "The rollout is recorded as simulated. Nothing is written to any external system.",
+    "cap": "The rollout is recorded as simulated.|Nothing is written to any external system."
+   }
+  ]
+ },
+ {
+  "id": "cohort",
+  "lines": [
+   {
+    "say": "Adoption is shown with its denominator: twenty seven of forty two eligible users.",
+    "cap": "Adoption is shown with its denominator:|27 of 42 eligible users."
+   },
+   {
+    "say": "Exclusions and unknowns stay out of it, and a warning shows two roles forty four points apart.",
+    "cap": "Exclusions and unknowns stay out of it, and a warning|shows two roles 44 points apart."
+   }
+  ]
+ },
+ {
+  "id": "import",
+  "lines": [
+   {
+    "say": "A cohort file with bad rows is rejected whole, with each error listed, and nothing changes.",
+    "cap": "A cohort file with bad rows is rejected whole,|with each error listed, and nothing changes."
+   }
+  ]
+ },
+ {
+  "id": "exports",
+  "lines": [
+   {
+    "say": "A verified finding must cite evidence, so this one is refused until I attach the run.",
+    "cap": "A verified finding must cite evidence,|so this one is refused until I attach the run."
+   },
+   {
+    "say": "The feedback packet keeps verified findings apart from hypotheses, for customer success and product.",
+    "cap": "The feedback packet keeps verified findings apart|from hypotheses, for customer success and product."
+   }
+  ]
+ },
+ {
+  "id": "close",
+  "lines": [
+   {
+    "say": "An independent concept by Ayo Ahmed. Not affiliated with Conduct, and not deployed.",
+    "cap": "An independent concept by Ayo Ahmed.|Not affiliated with Conduct, and not deployed."
+   }
+  ]
+ }
+]

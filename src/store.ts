@@ -3,8 +3,8 @@ import { renderExport, type ExportKind } from "./engine/exports";
 import { fingerprint } from "./engine/hash";
 import { CommandError, type State } from "./engine/types";
 
-export interface SqlCursor { toArray(): Record<string, unknown>[] }
-export interface SqlLike { exec(query: string, ...binds: unknown[]): SqlCursor }
+export interface SqlRows { toArray(): Record<string, unknown>[] }
+export interface SqlLike { exec(query: string, ...binds: unknown[]): SqlRows }
 export interface StorageLike { sql: SqlLike; transactionSync<T>(fn: () => T): T }
 
 export const IDEMPOTENCY_KEEP = 200;

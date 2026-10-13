@@ -30,6 +30,7 @@ npm run eval         # 12 expected/actual evaluations
 npm run eval:broken  # deliberately weakened freshness rule: 1 red, exit 1
 npm run ui:check     # with dev running: 24 browser checks incl. axe, keyboard, dialogs
 npm run check:wrangler
+cd demo && node record.mjs   # with dev running: deterministic walkthrough frames
 ```
 
 ## How it works
@@ -52,7 +53,8 @@ Cloudflare Workers Free configuration is prepared in `wrangler.jsonc` and the dr
 [Build vs buy](docs/build-vs-buy.md) · [Role viability](docs/role-viability.md) ·
 [v2 roadmap](docs/roadmap-v2.md) · [Decision log](docs/decision-log.md) ·
 [Test results](docs/test-results.md) · [Claims and caveats](docs/claims-and-caveats.md) ·
-[Research](docs/research.md) · [Design](design.md) · [Deploy](docs/deploy.md)
+[Research](docs/research.md) · [Design](design.md) · [Deploy](docs/deploy.md) ·
+[Walkthrough script](docs/video/script.md)
 
 No interviews have been run and nothing here measures real adoption or business impact.
 
