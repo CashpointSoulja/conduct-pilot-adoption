@@ -1,0 +1,21 @@
+{
+  // Cloudflare Workers Free plan. Durable Objects on the Free plan must use the SQLite storage
+  // backend, declared below with new_sqlite_classes. No paid bindings, no secrets, no routes.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "conduct-pilot-adoption",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
+  },
+  "durable_objects": {
+    "bindings": [{ "name": "WORKSPACE", "class_name": "PilotWorkspace" }]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["PilotWorkspace"] }],
+  "observability": { "enabled": false }
+}

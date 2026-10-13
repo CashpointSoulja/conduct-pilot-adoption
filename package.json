@@ -1,0 +1,30 @@
+{
+  "name": "conduct-pilot-adoption",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "wrangler dev --local --port 8787",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "eval": "vite-node eval/run.ts --",
+    "eval:broken": "vite-node eval/run.ts -- --broken",
+    "check:wrangler": "wrangler deploy --dry-run --outdir .wrangler/dry-run",
+    "check": "npm run typecheck && npm test && npm run eval && npm run check:wrangler"
+  },
+  "keywords": [],
+  "author": "Ayo Ahmed",
+  "license": "UNLICENSED",
+  "description": "Pilot-to-Adoption Proof: independent concept by Ayo Ahmed. Synthetic data only.",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260702.1",
+    "@fontsource/fragment-mono": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/source-serif-4": "^5.3.1",
+    "@types/node": "^22.20.5",
+    "playwright": "1.48",
+    "typescript": "^7.0.2",
+    "vitest": "^2.1.9",
+    "wrangler": "^4.150.0"
+  },
+  "private": true,
+  "type": "module"
+}
